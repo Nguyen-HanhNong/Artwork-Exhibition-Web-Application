@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+
+head
+  title #{artist.username} Profile Page
+  link(rel='stylesheet', href='/css/artwork.css')
+body(onload="init()")
+  include ../components/header 
+  h2 This is the profile page for #{artist.username}! 
+  h4 All artwork created by #{artist.username}: 
+  u1#artist-artwork-list 
+  br 
+  h4 All workshops ran by #{artist.username}: 
+  u1#artist-workshop-list
+  br
+  button#follow-button(type="button", class="submit-button", value=`${artist._id}`, onclick="changeFollowStatus()")
+
+script(src='/javascript/artist.js')

@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+
+head
+  title Create Account Page
+  link(rel='stylesheet', href='/css/account.css')
+body
+div#container-div
+  div#login-div 
+    h2#login-header Create Your Account Here!
+
+    input#username-input(type="text", placeholder="Username")
+    br
+    br 
+    
+    input#password-input(type="text", placeholder="Password")
+    br
+    br
+    br
+
+    button#login-button(type="button", value="Login", onclick="createAccount()") Create Account
+
+script(src='/javascript/account.js')

@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+
+head
+  title Artwork Exhibition Web Application 
+  link(rel='stylesheet', href='/css/home-page.css')
+body
+  h1 Artwork Exhibition Web Application
+  h4 What is this application?
+  p This application allows an exhibition space for artists and allows artists and patrons to connect. The application features two different modes, one for patrons and one for artists, and allows the traversal of artwork and workshops.
+  br 
+  h3 If you have not created an account, click on the button below to create an account and begin accessing the application: 
+    form(action="/account/create")
+      input(type="submit", value="Create an account!")
+  h3 If you have already created an account, click on the button below to login to your account and begin accessing the application:
+    form(action="/account/login")
+      input(type="submit", value="Log in to your account!")

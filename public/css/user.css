@@ -1,0 +1,21 @@
+body {
+    background-color: #F2D7D5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 75%;
+    min-width: 1000px;
+}
+.column {
+    float: left;
+}
+.left {
+    width: 25%;
+}
+.middle {
+    width: 40%;
+}
+.right {
+    width: 20%;
+}
+li {
+  font-weight: lighter;
+}

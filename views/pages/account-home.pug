@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+
+head
+  title #{user.username} Account Home Page
+  link(rel='stylesheet', href='/css/user.css')
+body(onload=`init()`)
+  h1 #{user.username} Home Page!
+  include ../components/header
+
+  div#left-div(class="column left") 
+    div#switch-account-div
+      h3 Click below to Switch your Account Type!
+      button#login-button(type="button", value="Switch Account Type", onclick="switchAccountType()")
+    div#account-privilege-div
+      h2#account-privilege-header
+
+  div#middle-div(class="column middle")
+    div#notifications-div
+      h3 All of your notifications that you have received
+        u1#notifications-list
+
+  div#right-div(class="column right")
+    div#reviewed-div
+      h3 List of artworks that you have reviewed
+        u1#reviewed-list
+    br
+    div#liked-div
+      h3 List of artworks that you have liked
+        u1#liked-list
+    br
+    div#followed-artist-div
+      h3 List of your followed artists:
+        u1#followed-list 
+
+script(src='/javascript/user.js')

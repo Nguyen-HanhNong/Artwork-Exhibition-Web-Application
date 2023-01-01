@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+
+head
+  title Find Artwork 
+  link(rel='stylesheet', href='/css/artwork.css')
+body
+  include ../components/header
+  div#query-div
+    h1 Find Artwork:
+    br
+    table
+      tr
+        th: label#name-label(class="labels", for="name") Artwork Name
+        th: input#name-input(type="text", name="name")
+      tr
+        th: label#artist-label(class="labels", for="artist-name") Artist Name
+        th: input#artist-input(type="text", name="arist-name")
+      tr
+        th: label#category-label(class="labels", for="category") Category
+        th: input#category-input(type="text", name="category")
+      tr
+        th: label#medium-label(class="labels", for="medium") Medium
+        th: input#medium-input(type="text", name="medium")
+    
+    button(type="button", class="submit-button", value="Search For Artwork", onclick="search()") Search For Artwork 
+
+script(src='/javascript/artwork.js')

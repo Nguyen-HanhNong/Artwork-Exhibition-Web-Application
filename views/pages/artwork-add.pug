@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+
+head
+  title Add Artwork Page
+  link(rel='stylesheet', href='/css/artwork.css')
+body
+  include ../components/header 
+  h1 Add Artwork Page
+  br
+  table
+    tr
+      th: label#name-label(class="labels", for="name") Artwork Name
+      th: input#name-input(type="text", name="name")
+    tr
+      th: label#year-label(class="labels", for="year") Artwork Year 
+      th: input#year-input(type="text", name="year")
+    tr
+      th: label#category-label(class="labels", for="category") Artwork Category
+      th: input#category-input(type="text", name="category")
+    tr
+      th: label#medium-label(class="labels", for="medium") Artwork Medium
+      th: input#medium-input(type="text", name="medium")
+    tr
+      th: label#description-label(class="labels", for="description") Artwork Description
+      th: textarea#description-input(type="text", name="description")
+    tr
+      th: label#image-label(class="labels", for="image") Artwork Image Link
+      th: textarea#image-input(type="text", name="images")
+  button#like-button(type="button", class="submit-button", value="Add Artwork to Database", onclick="addArtwork()") Add Artwork
+
+script(src='/javascript/artwork.js')

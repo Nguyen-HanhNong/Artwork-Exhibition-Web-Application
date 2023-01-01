@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+
+html
+	head
+		title Artwork Search Results
+		link(rel='stylesheet', href='/css/artwork.css')
+body
+	include ../components/header
+	br
+
+	h1 Art Search Results Below:
+	
+	each artwork in artworks
+		a(href="/artwork/" + artwork._id) #{artwork.name}
+		br
+		br
+	
+	if current > 1
+		- let url = "/artwork/list/results/?page=" + (current-1)
+		- if(qstring.length > 0){ url += "&" + qstring; }
+		button(onclick=`location.href="${url}"`, type="button") Previous Page
+	|
+	|
+	|
+	|
+	|
+	if artworks.length > 0 
+		- url = "/artwork/list/results/?page=" + (current+1)
+		- if(qstring.length > 0){ url += "&" + qstring; }
+		button(onclick=`location.href="${url}"`, type="button") Next Page

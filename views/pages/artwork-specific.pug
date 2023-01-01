@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+
+head
+  title #{artwork.name} Page
+  link(rel='stylesheet', href='/css/artwork.css')
+body(onload="initSpecificArtwork()")
+  include ../components/header
+  div#artwork-properties-div
+    h4 Artwork Name: #{artwork.name}
+    br
+    h4 Artwork Year: #{artwork.year}
+    br
+    h4 Artwork Description: #{artwork.description}
+    br
+    h4 Artwork Artist: 
+      a(href=`/artist/${artist._id}`) #{artwork.artist}
+    br
+    h4 Artwork Category: 
+      a(href=`/artwork/list/results/?category=${artwork.category}`) #{artwork.category}
+    br
+    h4 Artwork Medium: 
+      a(href=`/artwork/list/results/?medium=${artwork.medium}`) #{artwork.medium}
+    br
+    h4 All Reviews for #{artwork.name}: 
+    u1#reviews-list 
+    br
+    img(src=`${artwork.image}` alt=`${artwork.description}`)
+  div#add-reviews-and-likes-div
+    h4#likes-header Number of Likes: #{artwork.likes}
+
+    if reviewPrivilege == true
+      button#like-button(type="button", class="submit-button", value="Like/Unlike", onclick="changeLikeness()")
+      br
+      h4#review-header Add a Review:
+      textarea#review-text(rows="4", cols="50", maxlength="1000")
+      br
+      button#review-button(type="button", class="submit-button", value="Submit Review", onclick="submitReview()") Submit Review
+
+script(src='/javascript/artwork.js')
+
+  
+

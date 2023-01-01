@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+
+head
+  title Review for #{artwork.name} by #{review.reviewer}
+  link(rel='stylesheet', href='/css/artwork.css')
+body
+  include ../components/header 
+  div#review-properties-div
+    h4 Reviewer: #{review.reviewer}
+    br
+    h4 Artwork Reviewed:
+      a(href=`/artwork/${review.artwork_id}`) #{artwork.name}
+    br
+    h4 Review Contents:
+    p #{review.content}

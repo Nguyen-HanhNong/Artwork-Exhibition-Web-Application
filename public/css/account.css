@@ -1,0 +1,21 @@
+body {
+  background-image: linear-gradient(to right, #74F2CE, #7CFFCB);
+}
+
+#container-div {
+  display: flex;
+  justify-content: center;
+}
+
+#login-div {
+  background-image: linear-gradient(to right, #EEEEEE, #FAF8F9);
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+
+  margin-top: 15%;
+
+  width: 20%;
+  height: 50%;
+  text-align: center;
+}
+
+

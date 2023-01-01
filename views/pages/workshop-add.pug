@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+
+head
+  title Add Workshop Page
+  link(rel='stylesheet', href='/css/artwork.css')
+body
+  include ../components/header 
+  h1 Add Workshop Page
+
+  table
+    tr
+      th: label#title-label(class="labels", for="name") Workshop Title
+      th: input#title-input(type="text", name="name")
+
+  button#submit-button(type="button", class="submit-button", value="Add Workshop to Database", onclick="addWorkshop()") Add Workshop
+
+script(src='/javascript/workshop.js')
