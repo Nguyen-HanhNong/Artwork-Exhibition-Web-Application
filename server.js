@@ -1,7 +1,6 @@
 /* File: server.js */
 /* Author: Nguyen-Hanh Nong */
 /* Purpose: This file is the file that is loaded to run the server for the Term Project. It manages all the routers and all the requests which come into the server. */
-/* Note: The majority of this code is taken from the store-server.js file from Mongoose Store code from Brightspace */
 
 /* Importing all the necessary libraries and routers */
 const express = require('express');

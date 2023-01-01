@@ -1,7 +1,6 @@
 /* File: account-router.js */
 /* Author: Nguyen-Hanh Nong */
 /* Purpose: This file is the router which deals with all the routes that start with the /account URL. */
-/* Note: The majority of this code is taken from the router files from Mongoose Store code from Brightspace */
 
 /* Importing express and the schemas */
 const express = require('express');

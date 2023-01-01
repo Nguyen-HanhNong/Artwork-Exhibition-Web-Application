@@ -1,7 +1,6 @@
 /* File: artist-router.js */
 /* Author: Nguyen-Hanh Nong */
 /* Purpose: This file is the router which deals with all the routes that start with the /artist URL. */
-/* Note: The majority of this code is taken from the router files from Mongoose Store code from Brightspace */
 
 /* Importing the necessary libraries and schemas */
 const express = require('express');

@@ -1,7 +1,6 @@
 /* File: artwork-router.js */
 /* Author: Nguyen-Hanh Nong */
 /* Purpose: This file is the router which deals with all the routes that start with the /artwork URL. */
-/* Note: The majority of this code is taken from the router files from Mongoose Store code from Brightspace */
 
 /* Importing the necessary libraries and schemas */
 const express = require('express');
@@ -52,7 +51,6 @@ function queryParser(req, res, next) {
 	const MAX_ARTWORK = 25;
 	
 	//build a query string to use for pagination later
-	/* Note: This was taken from the queryParser function in the products-router.js file in the Mongoose Store demo from Brightspace */
 	let params = [];
 	for(prop in req.query){
 		if(prop == "page"){
@@ -101,7 +99,6 @@ function queryParser(req, res, next) {
 }
 
 /* This function is a middleware function which gets all the artworks from the database which match the query paramaters which are sent when searching for artwork */
-/* Note: This function was copied from the loadProductsDatabase function in the products-router.js file in the Mongoose Store demo from Brightspace */
 function loadArtworksDatabase(req, res, next) {
 	/* Get the start index of checking in the database and the max amount of items we want to get from the database */
 	let startIndex = ((req.query.page-1) * req.query.limit);

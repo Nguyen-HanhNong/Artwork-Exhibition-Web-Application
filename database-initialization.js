@@ -1,7 +1,6 @@
 /* File: database-initialization.js */
 /* Author: Nguyen-Hanh Nong */
 /* Purpose: This file handles the initialization and inserting of the data necessary into a local mongoDB database. */
-/* Note: The code is heavily influenced from ex10-product-inserter.js from the code from Lecture 20 (1st Mongoose Lecture) */
 
 /* Importing the necessary data from the JSON files  */
 let artworkData = require("./gallery.json");
