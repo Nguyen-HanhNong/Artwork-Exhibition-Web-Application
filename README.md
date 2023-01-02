@@ -23,7 +23,7 @@ Alongisde JavaScript and Express, I also use Pug, which is a template engine. I 
 ![](https://user-images.githubusercontent.com/81977350/210188116-35722240-71bd-4df2-bf6a-4354a344cc34.gif)
 
 ## Instructions to compile and run the application
-1. Make sure to download the latest version of ![Node.js and npm](https://nodejs.org/en/download/)
+1. Make sure to download the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 2. Download the source code or clone the repository.
 3. First, install the necessary dependencies and packages using the following command in a terminal in the root directory of the program: `npm install`
 4. Initialize the database by running the database initializer script using the following command in a terminal in the root directory of the program: `node database-initialization.js`
