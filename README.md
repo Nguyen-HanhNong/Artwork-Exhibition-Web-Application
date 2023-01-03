@@ -9,7 +9,7 @@
 
 ## What is this application?
 
-This application allows for client to create account to view artwork stored on a MongoDB database. It also allows clients to add artwork to the database, follow artists and sign-up for workshops hosted by artists.
+This application allows a client to create an account to view artwork stored on a MongoDB database. It also allows clients to add the artwork to the database, follow artists, and sign-up for workshops hosted by artists.
 
 ## Choice of programming languages and frameworks
 The website was primarily made using JavaScript and Express. I used Express as my web framework of choice for the following reasons:
@@ -18,7 +18,7 @@ The website was primarily made using JavaScript and Express. I used Express as m
 - Express is built on top of Node.js, which is a popular runtime environment for building scalable and high-performance web applications. This means that Express applications can be easily scaled to handle a large number of requests and can make efficient use of server resources.
 - Express has a large ecosystem of middleware and plugins that can be easily integrated into your application. This can make it easier to add additional functionality and customize your application to meet your specific needs.
 
-Alongisde JavaScript and Express, I also use Pug, which is a template engine. I chose this over using raw HTML files as it allows for easy integration with JavaScript objects and arrays.
+Alongside JavaScript and Express, I also use Pug, which is a template engine. I chose this over using raw HTML files as it allows for easy integration with JavaScript objects and arrays.
 
 ## Video of the application running:
 ![](https://user-images.githubusercontent.com/81977350/210188116-35722240-71bd-4df2-bf6a-4354a344cc34.gif)
